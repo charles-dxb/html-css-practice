@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Microsoft YaHei";
+    background-color: #dedede;
+}
+
+header{
+    position: relative;
+    height: 60px;
+    background-color: #333333;
+}
+header img{
+    padding-left: 20px;
+    height: 58px;
+}
+header ul{
+   position: absolute;
+   top:0;
+   right: 10px;
+}
+header ul li{
+    display: block;
+    width: 80px;
+    text-align: center;
+    float: left;
+    padding: 20px 10px;
+}
+header ul li a{
+    text-decoration: none;
+    font-size: 12px;
+    color: white;
+}
+header ul li:hover{
+    background-color: #474747;
+    border-bottom: 1px solid #ff0000;
+    border-radius: 3px;
+}
+
+article,aside{
+    display: block;
+    margin: 30px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 2px 1px #848484;
+}
+article h2{
+    padding: 5px 0;
+}
+article h3{
+    padding: 10px 0;
+    font-size: 16px;
+    color: #808080;
+}
+article a{
+    color: #0000ff;
+}
+article a:hover{
+    color: #ff0000;
+}
+article p{
+    text-indent: 2em;
+    font-family: "Microsoft YaHei";
+    font-size: 12px;
+}
+article ul li{
+    list-style-type: none;
+}
+article img{
+    padding-left: 30px;
+}
+.auther .pubtime{
+    color: #808080;
+    font-size: 12px;
+}
+article dl dd{
+    width:120px;
+    margin:15px;
+    border:1px solid #ccc;
+}
+article dl dd span{
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    margin: 5px;
+}
+article dl dd img{
+    width:110px;
+    padding:5px;
+}
+article ol{
+    margin: 10px 40px;
+}
+article table{
+    width: 100%;
+    border-collapse: collapse;
+}
+article tr th{
+    background-color: #000000;
+    color: white;
+}
+article tr td{
+    border: 1px solid #ccc;
+}
+article .totalrow{
+    background-color: #cccccc;
+}
+aside form div{
+    margin: 10px 0;
+}
+aside form div label{
+    float: left;        /*解决textarea和文本域label水平对齐*/
+    display: inline-block;
+    width: 35%;
+    text-align: right;
+    padding-right: 20px;
+}
+aside form div p{
+    margin-left: 35%;
+    padding: 10px 0 15px 10px;
+}
+aside .submitbtn{
+    width: 100%;
+    height: 40px;
+    color: white;
+    background-color: #00A9C9;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+}
+aside .submitbtn:hover{
+    background-color: #0063dc;
+}
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: #333333;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    line-height: 50px;
+}
