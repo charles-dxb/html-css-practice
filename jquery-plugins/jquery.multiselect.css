@@ -1,0 +1,42 @@
+.ms2side_select{
+    float: left;
+}
+
+.ms2side_select select{
+    width: 220px;
+    height: 106px;
+    border: 1px solid #008080;
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 3px;
+}
+
+.ms2side_select option{
+    font-size: 14px;
+    height: 20px;
+    padding-left: 5px;
+}
+
+.ms2side_select option:hover{
+    color: #000000;
+    background-color: #ebcccc;
+}
+
+.ms2side_options{
+    float: left;
+    font-size: 16px;
+    margin: 0;
+    padding: 0 8px;
+    width: 40px;
+    color: #00b3ee;
+    text-align: center;
+    overflow: hidden;
+}
+
+.ms2side_options p{
+    margin: 2px 0;
+    padding: 0;
+    cursor: pointer;
+    border: 1px solid #008080;
+    border-radius: 3px;
+}

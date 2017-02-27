@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <link rel="stylesheet" href="jquery.multiselect.css" />
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.multiselect.js"></script>
+    <script type="text/javascript">
+        $(function(){
+           $("#ms").multiselect({data:[{name:'美国',value:1},{name:'中国',value:2},
+                                         {name:'俄罗斯',value:1},{name:'葡萄牙',value:2},
+                                         {name:'德国',value:1},{name:'西班牙',value:2},
+                                         {name:'法国',value:1},{name:'巴西',value:2,selected:true}
+                                  ]});
+        });
+    </script>
+</head>
+<body>
+    <select id="ms"></select>
+</body>
+</html>
