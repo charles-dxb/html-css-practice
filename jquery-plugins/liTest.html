@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.license.js"></script>
+    <script type="text/javascript">
+        $(function(){
+           $("#test").license();
+
+            /*$("#test").multiselect("addOption",{name:'俄罗斯',value:3});
+           $("#test").multiselect("addOption",{name:'德国',value:4});
+           $("#test").multiselect("addOption",{name:'法国',value:5});
+           $("#test").multiselect("addOption",{name:'西班牙',value:6});
+           $("#test").multiselect("addOption",{name:'葡萄牙',value:7});
+           $("#test").multiselect("addOption",{name:'巴西',value:1,selected:true});*/
+        });
+
+        function test(){
+           alert($("#test").license("getValue"));
+        }
+    </script>
+</head>
+<body>
+    <input id="test"></select>
+<button onclick="test()">ttttt</button>
+</body>
+</html>
