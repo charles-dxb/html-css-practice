@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<style type="text/css">
+        div{
+            width: 300px;
+            height: 100px;
+            border: 1px solid #6AC5AC; 
+        }
+        .relative{
+            position: relative;
+            border: 1px solid #D64078; 
+            top:10px;
+        }
+        .absolute{
+            position: absolute;
+            border: 3px solid green; 
+            top:40px;
+        }
+        .absolute-inner{
+            width: 100px;
+            height: 50px;
+            position: absolute;
+            border: 3px solid green; 
+            top:40px;
+        }
+        .fixed{
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
+	</style>	
+</head>
+<body>
+	<div class="static">static</div>
+    <div class="relative">relative div。相对定位是“相对于”元素在文档流中的初始位置。</div>
+    <div>position未做任何设置，可以看到relative的div覆盖了本div部分区域</div>
+    <div class="absolute">absolute div。绝对定位是“相对于”距离它最近的已定位元素。</div>
+    <div class="relative">
+        <div class="absolute-inner">absolute-inner div，包含在一个position为非static的已定位元素中。</div>
+    </div>
+    <div class="fixed">
+          fixed div。固定定位是绝对定位的一种，区别是固定元素的包含块是视口(viewport)。
+    </div>
+</body>
+</html>
