@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<style type="text/css">
+        [id ^= 'section']{
+            background-color: #ffff00;
+        }
+        [id $= '2']{
+            background-color: #F56356;
+        }
+        [id *= 'sample']{
+            background-color: #1E90FF;
+        }
+        [id |= "main"]{
+            background-color: green;
+        }
+        [class ~= "header"]{
+            color: blue;
+        }
+        [class *= "header"]{
+            background: yellow;
+        }
+	</style>	
+</head>
+<body>
+	<h3 id="section1">E[attr^="val"]：匹配attr属性以val开头的E元素</h3>
+    <div id="subsection1-1">示例文本1-1</div>
+    <div id="subsection1-2">示例文本1-2</div>
+    <div id="section">示例文本section</div>
+    <div id="subsection2-1">示例文本2-1</div>
+    <h3 id="subsection2-2">E[attr$="val"]：匹配attr属性以val结尾的E元素</h3>
+    <div id="sample1">示例文本sample1</div>
+    <div id="sample3">示例文本sample3</div>
+    <h3 id="main">示例文本main</h3>
+    <h3 id="main-3">E[attr|="val"]：匹配attr属性等于val或者以val-开头的E元素</h3>
+    <h3 id="mainh3">示例文本mainh3</h3>
+    <h3 class="header group">E[attr~="val"]：匹配具有attr属性且属性值为一用空格分隔的字符列表，其中一个等于val的E元素</h3>
+    <h3 class="headergroup">E[attr*="val"]：选择具有attr属性且属性值为包含val字符串的E元素</h3>
+</body>
+</html>
