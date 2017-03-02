@@ -1,8 +1,6 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>Level Selector</title>
     <style type="text/css">
         #u2 + li {font-weight:bold;}
         #o2 ~ li {font-weight:bold;}
@@ -14,29 +12,29 @@
 <body>
 <div>
     <ul>
-        <li>相邻同胞选择器 + </li>
-        <li id="u2">List item:ID为u2,样式为："#u2 + li {font-weight:bold;}"</li>
+        <li>相邻兄弟选择器(Next-sibling combinator) + </li>
+        <li id="u2">List item:ID为u2 样式为："#u2 + li {font-weight:bold;}"</li>
         <li>List item 3</li>
         <li>List item 4</li>
     </ul>
     <hr/>
     <ol>
-        <li>兄弟元素选择器 ~ </li>
-        <li id="o2">List item:ID为o2,样式为: "#o2 ~ li {font-weight:bold;}"</li>
+        <li>兄弟元素选择器(Following-sibling combinator) ~ </li>
+        <li id="o2">List item:ID为o2 样式为: "#o2 ~ li {font-weight:bold;}"</li>
         <li>样式应用到o2后面的所有兄弟元素li</li>
         <li>List item 4</li>
         <li>List item 5</li>
     </ol>
     <hr/>
     <div class="content">
-       <p>class是content的div下的p元素。子元素选择器 ></p>
-       <div>
-           <p>class是content的div下的div中的p元素</p>
-       </div>      
+        <p>class是content的div下的p元素。子元素选择器(Child combinator) ></p>
+        <div>
+            <p>class是content的div下的div中的p元素</p>
+        </div>
     </div>
     <hr/>
     <ul>
-        <li>后代选择器 空格
+        <li>后代选择器(Descendant combinator) 空格
             <ol>
                 <li>List item：样式为“ul em {color:red; font-weight:bold;}”</li>
                 <li>List item 1-2</li>
