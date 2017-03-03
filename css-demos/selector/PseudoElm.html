@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<style type="text/css">
+        p:first-child{
+            font-weight: bold;
+        }
+        p.firstletter:first-letter{
+            font-size: 200%;
+        }
+        p.firstline:first-line{
+            color: red;
+        }
+	</style>	
+</head>
+<body>
+    	<h2>静态伪类E:first-child</h2>
+        <p class="firstline">这个段落不是其父元素(body)的第一个子元素，测试下设置第一行的样式的first-line,影响元素中的第一行文本。例如，可以让一个文档的第一段的第一行变为红色。这个段落不是其父元素(body)的第一个子元素，测试下设置第一行的样式的first-line,影响元素中的第一行文本。例如，可以让一个文档的第一段的第一行变为红色。</p>
+        <p class="firstletter">This is second paragraph.</p>
+        <div>
+            <p>这个段落是其父元素(div)的第一个子元素</p>
+            <p>使用静态伪类E:first-child来匹配：如果元素E是其父元素的第一个子元素，则匹配。</p>
+        </div>
+</body>
+</html>
