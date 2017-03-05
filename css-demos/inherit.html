@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<style type="text/css">
+		#toolbar{
+			background: blue;
+			color: #fff;
+			/*div本身将有一个蓝色的背景色和白色的前景色，但是链接a还是会
+			根据浏览器的首选项设置来应用样式*/
+		}
+		/*
+		在大多数情况下，不必指定继承，但inherit还是很有用的。
+        正常情况下，直接指定的样式总会优于继承的样式，但是通过inherit可以把
+        情况反过来。
+		#toolbar a{
+			color: inherit;
+		}
+		*/
+	</style>	
+</head>
+<body>
+    <div id="toolbar">
+		<a href="#">one</a>|
+		<a href="#">two</a>|
+		<a href="#">three</a>
+	</div>
+</body>
+</html>
